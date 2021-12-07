@@ -1,0 +1,15 @@
+<div [routerLink]="['/candidate', candidate.id]" *ngIf="candidate" class="card candidate-card" style="flex:none; width:250px;" id="@item.Id">
+    <img class="card-img-top" src="{{candidate.imageurl}}" alt="Card image cap">
+    <div class="card-body">
+        <h3 class="card-text">{{candidate.firstname}} {{candidate.lastname}}</h3>
+        <h4>{{candidate.title}}</h4>
+        <p>{{candidate.bio}}</p>
+    </div>
+    <p>
+        <span class="tags">html5</span>
+        <span class="tags">css3</span>
+        <span class="tags">jquery</span>
+        <span class="tags">bootstrap3</span>
+    </p>
+
+</div>
